@@ -13,7 +13,36 @@
 		7FAF65372607A1D9001345E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAF65352607A1D9001345E1 /* Main.storyboard */; };
 		7FAF65392607A1DB001345E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FAF65382607A1DB001345E1 /* Assets.xcassets */; };
 		7FAF653C2607A1DB001345E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAF653A2607A1DB001345E1 /* LaunchScreen.storyboard */; };
+		7FAF654B2607CFF2001345E1 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FAF654A2607CFF2001345E1 /* Media.xcassets */; };
+		7FAF654D2607CFF2001345E1 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAF654C2607CFF2001345E1 /* ActionViewController.swift */; };
+		7FAF65502607CFF2001345E1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAF654E2607CFF2001345E1 /* MainInterface.storyboard */; };
+		7FAF65542607CFF2001345E1 /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7FAF65482607CFF2001345E1 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7FAF655C2607D36C001345E1 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = 7FAF655B2607D36C001345E1 /* Action.js */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FAF65522607CFF2001345E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FAF65242607A1D9001345E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FAF65472607CFF2001345E1;
+			remoteInfo = Extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7FAF65582607CFF2001345E1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7FAF65542607CFF2001345E1 /* Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7FAF652C2607A1D9001345E1 /* Project19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project19.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +53,23 @@
 		7FAF65382607A1DB001345E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FAF653B2607A1DB001345E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FAF653D2607A1DB001345E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FAF65482607CFF2001345E1 /* Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FAF654A2607CFF2001345E1 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		7FAF654C2607CFF2001345E1 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		7FAF654F2607CFF2001345E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		7FAF65512607CFF2001345E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FAF655B2607D36C001345E1 /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7FAF65292607A1D9001345E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FAF65452607CFF2001345E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				7FAF652E2607A1D9001345E1 /* Project19 */,
+				7FAF65492607CFF2001345E1 /* Extension */,
 				7FAF652D2607A1D9001345E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				7FAF652C2607A1D9001345E1 /* Project19.app */,
+				7FAF65482607CFF2001345E1 /* Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +111,18 @@
 			path = Project19;
 			sourceTree = "<group>";
 		};
+		7FAF65492607CFF2001345E1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7FAF654A2607CFF2001345E1 /* Media.xcassets */,
+				7FAF654C2607CFF2001345E1 /* ActionViewController.swift */,
+				7FAF654E2607CFF2001345E1 /* MainInterface.storyboard */,
+				7FAF65512607CFF2001345E1 /* Info.plist */,
+				7FAF655B2607D36C001345E1 /* Action.js */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +133,34 @@
 				7FAF65282607A1D9001345E1 /* Sources */,
 				7FAF65292607A1D9001345E1 /* Frameworks */,
 				7FAF652A2607A1D9001345E1 /* Resources */,
+				7FAF65582607CFF2001345E1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7FAF65532607CFF2001345E1 /* PBXTargetDependency */,
 			);
 			name = Project19;
 			productName = Project19;
 			productReference = 7FAF652C2607A1D9001345E1 /* Project19.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7FAF65472607CFF2001345E1 /* Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FAF65552607CFF2001345E1 /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildPhases = (
+				7FAF65442607CFF2001345E1 /* Sources */,
+				7FAF65452607CFF2001345E1 /* Frameworks */,
+				7FAF65462607CFF2001345E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Extension;
+			productName = Extension;
+			productReference = 7FAF65482607CFF2001345E1 /* Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +172,9 @@
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					7FAF652B2607A1D9001345E1 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					7FAF65472607CFF2001345E1 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -115,6 +193,7 @@
 			projectRoot = "";
 			targets = (
 				7FAF652B2607A1D9001345E1 /* Project19 */,
+				7FAF65472607CFF2001345E1 /* Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +206,16 @@
 				7FAF653C2607A1DB001345E1 /* LaunchScreen.storyboard in Resources */,
 				7FAF65392607A1DB001345E1 /* Assets.xcassets in Resources */,
 				7FAF65372607A1D9001345E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FAF65462607CFF2001345E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FAF655C2607D36C001345E1 /* Action.js in Resources */,
+				7FAF654B2607CFF2001345E1 /* Media.xcassets in Resources */,
+				7FAF65502607CFF2001345E1 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +232,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7FAF65442607CFF2001345E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FAF654D2607CFF2001345E1 /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FAF65532607CFF2001345E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FAF65472607CFF2001345E1 /* Extension */;
+			targetProxy = 7FAF65522607CFF2001345E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7FAF65352607A1D9001345E1 /* Main.storyboard */ = {
@@ -160,6 +265,14 @@
 				7FAF653B2607A1DB001345E1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7FAF654E2607CFF2001345E1 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FAF654F2607CFF2001345E1 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -284,6 +397,7 @@
 		7FAF65412607A1DB001345E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +417,7 @@
 		7FAF65422607A1DB001345E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +429,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MilosPetrusic.Project19;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7FAF65562607CFF2001345E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4BH3WR6T4;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MilosPetrusic.Project19.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7FAF65572607CFF2001345E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4BH3WR6T4;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MilosPetrusic.Project19.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -336,6 +489,15 @@
 			buildConfigurations = (
 				7FAF65412607A1DB001345E1 /* Debug */,
 				7FAF65422607A1DB001345E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FAF65552607CFF2001345E1 /* Build configuration list for PBXNativeTarget "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FAF65562607CFF2001345E1 /* Debug */,
+				7FAF65572607CFF2001345E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
